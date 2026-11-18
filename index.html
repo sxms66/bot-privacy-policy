@@ -1,1 +1,57 @@
 
+from pathlib import Path
+
+html = """<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - [سكر]</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.65; max-width: 850px; margin: 40px auto; padding: 0 20px; color: #222; }
+    h1, h2 { line-height: 1.25; }
+    h1 { border-bottom: 1px solid #ddd; padding-bottom: 12px; }
+    a { color: #2457c5; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><strong>Effective Date:</strong> November 18, 2026</p>
+  <h2>1. Introduction</h2>
+  <p>This Privacy Policy explains how [سكر] ("the Bot") collects, stores, uses, and protects information when users interact with it on Discord. By using the Bot, you agree to the practices described in this policy.</p>
+  <h2>2. Information We Collect</h2>
+  <p>The Bot may collect and store the following information:</p>
+  <ul>
+    <li>Discord User IDs.</li><li>Discord Server (Guild) IDs.</li>
+    <li>User balances, coins, points, and economy data.</li>
+    <li>User message counts and activity statistics.</li>
+    <li>Server configuration settings.</li>
+    <li>Role and channel IDs required for bot functionality.</li>
+    <li>Game information, scores, and game history.</li>
+  </ul>
+  <p>The Bot does not intentionally collect passwords or Discord account login credentials.</p>
+  <h2>3. How We Use Your Information</h2>
+  <p>Collected information is used exclusively to provide the Bot's features and commands, maintain virtual currency and economy systems, track game scores and player statistics, maintain server settings and configurations, provide leaderboards and activity tracking, and improve the Bot's functionality and reliability.</p>
+  <h2>4. Data Storage and Security</h2>
+  <p>Information is stored in databases used by the Bot. We take reasonable measures to protect stored information against unauthorized access, alteration, or disclosure. However, no method of electronic storage or transmission is completely secure.</p>
+  <h2>5. Data Sharing</h2>
+  <p>We do not sell, rent, or trade users' personal information. Information is not shared with third parties unless necessary to operate the Bot, comply with applicable laws, or protect the Bot and its users.</p>
+  <h2>6. Data Retention and Deletion</h2>
+  <p>We retain collected information for as long as necessary to provide the Bot's functionality. Users may request the deletion of their stored information by contacting the Bot's owner. Some information may need to be retained where required by law.</p>
+  <h2>7. Third-Party Services</h2>
+  <p>The Bot operates through Discord and is subject to Discord's Terms of Service and Privacy Policy. <a href="https://discord.com/privacy">Discord Privacy Policy</a>.</p>
+  <h2>8. Children's Privacy</h2>
+  <p>The Bot does not knowingly collect personal information beyond the information necessary for its Discord functionality.</p>
+  <h2>9. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy when necessary. Any changes will be published on this page with an updated effective date.</p>
+  <h2>10. Contact Information</h2>
+  <p>For questions, concerns, or data deletion requests, contact the Bot owner:</p>
+  <p><strong>Contact:</strong> [s.606]</p>
+  <hr>
+  <p>By using the Bot, you acknowledge that you have read this Privacy Policy.</p>
+</body>
+</html>
+"""
+path = Path("/mnt/data/privacy-policy.html")
+path.write_text(html, encoding="utf-8")
+print(path)
